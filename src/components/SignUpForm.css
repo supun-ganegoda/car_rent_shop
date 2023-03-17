@@ -1,0 +1,77 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.popup.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content .form-group {
+  margin-bottom: 10px;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="email"] {
+  width: 95%;
+  padding: 4px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.popup-content button[type="submit"] {
+  background-color: #e7b14c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.popup-content button[type="submit"]:hover {
+  scale: 1.05;
+  background-color: #549dec;
+}
+
+.popup-content button.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 10px;
+  cursor: pointer;
+}

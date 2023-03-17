@@ -1,0 +1,52 @@
+.category--container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ece3e3;
+  padding: 20px;
+  margin-top: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100px;
+}
+
+.category--header {
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.category--selectors {
+  display: block;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.category--selectors input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.category--selectors label {
+  font-size: 14px;
+}
+
+.hero--container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero--image {
+  max-width: 100%;
+  padding-top: 4px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+}
+
+.hero--image img {
+  max-width: 100%;
+  height: auto;
+}
