@@ -43,6 +43,10 @@ const CardGrid = ({ selectedOptions }) => {
 
   return (
     <>
+      <hr />
+      <div className="card-result">
+        <p>{cards.length} results found</p>
+      </div>
       <div className="card-grid">
         {cards.map((card) => (
           <div key={card.plateNo} onClick={() => handleClick(card)}>

@@ -1,8 +1,13 @@
+import { useState } from "react";
 import "./Previewer.css";
+import ThankYouCard from "./ThankYouCard";
 
 const Previewer = ({ selectedCard, handleClose }) => {
+  const [display, setDisplay] = useState(false);
+
   const handleClick = () => {
-    console.log(selectedCard);
+    //handleClose();
+    setDisplay(true);
   };
 
   return (
@@ -37,6 +42,9 @@ const Previewer = ({ selectedCard, handleClose }) => {
             close
           </button>
         </div>
+        {display && (
+          <ThankYouCard handleClose={handleClose} selectedItem={selectedCard} />
+        )}
       </div>
     </>
   );
